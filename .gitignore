@@ -1,0 +1,3 @@
+# Runtime state: hourly database dumps and their logs, uploaded files
+backups/
+storage/
