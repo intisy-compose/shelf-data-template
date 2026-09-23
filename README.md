@@ -7,8 +7,8 @@ Default `data/` folder for
 `git clone --recursive` runs out of the box.
 
 It is mounted at `data/`: the db-backup sidecar writes its hourly database dumps to
-`backups/` and Supabase Storage keeps shelf's uploaded files in `storage/`. Both are runtime state
-and gitignored, so this template tracks no files of its own; the folders are created on first
+`backups/`, Supabase Storage keeps shelf's uploaded files in `storage/` and the Tailscale sidecar
+its node identity (a secret) in `tailscale/`. All three are runtime state and gitignored, so this template tracks no files of its own; the folders are created on first
 start. The database itself lives in a Docker volume, and `backups/` is how it gets back.
 
 ## Use your own data
