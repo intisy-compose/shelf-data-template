@@ -1,0 +1,31 @@
+# Starter taxonomy for the shelf-compose catalog tool. Declare every category, custom field, tag,
+# location and asset model the inventory may use; `.\docker-compose.ps1 catalog sync` applies it and
+# `add` / `update` refuse anything not declared here.
+
+[[categories]]
+name = "Laptops"
+description = "Portable computers."
+color = "#2563eb"
+
+[[fields]]
+name = "Condition"
+type = "OPTION"
+options = ["Tested working", "Untested", "Needs repair", "Broken"]
+categories = ["Laptops"]
+required = true
+
+[[fields]]
+name = "Serial number"
+type = "TEXT"
+categories = ["Laptops"]
+
+# Tags suit features an item can have several of at once; one value per item is a field.
+[[tags]]
+name = "USB-C charging"
+
+[[locations]]
+name = "Office"
+
+[[models]]
+name = "Lenovo ThinkPad T14 Gen 3"
+category = "Laptops"
