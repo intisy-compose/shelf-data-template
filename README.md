@@ -22,6 +22,9 @@ Fork or replace this repo, then point the folder at it from the shelf-compose ch
 
 Commit configuration, not runtime state.
 
+`catalog.toml` is a starter taxonomy for the catalog tool (see the shelf-compose README); replace it
+with your own categories, fields, tags, locations and models.
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
