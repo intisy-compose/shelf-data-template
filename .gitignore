@@ -1,5 +1,6 @@
-# Runtime state: hourly database dumps and their logs, uploaded files, and the tailscale node
-# identity (a secret)
+# Runtime state: hourly database dumps and their logs, uploaded files, and the secrets (the tailscale
+# node identity and the pgsodium root key)
 backups/
 storage/
 tailscale/
+secrets/
